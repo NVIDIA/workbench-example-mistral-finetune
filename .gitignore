@@ -1,0 +1,15 @@
+# Ignore generated or temporary files managed by the Workbench
+.project/*
+!.project/spec.yaml
+!.project/configpacks
+
+# General ignores
+.DS_Store
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+
+# Workbench Project Layout
+data/scratch/*
+!data/scratch/.gitkeep
