@@ -1,6 +1,8 @@
 # NVIDIA AI Workbench: Introduction
 This is an [NVIDIA AI Workbench](https://developer.nvidia.com/blog/develop-and-deploy-scalable-generative-ai-models-seamlessly-with-nvidia-ai-workbench/) example Project that demonstrates how to fine-tune a Mistral 7B large language model on a custom code instructions dataset using the QLoRA PEFT method. Users in the [AI Workbench Early Access Program](https://developer.nvidia.com/ai-workbench-early-access) can get up and running with this Project in minutes.
 
+Have questions? Please direct any issues, fixes, suggestions, and discussion on this project to the DevZone Members Only Forum thread [here](https://forums.developer.nvidia.com/t/support-workbench-example-project-mistral-finetune/278376/1). 
+
 ## Project Description
 Mistral 7B is a recent open-source language model developed by MistralAI that consistently delivers state-of-the-art results across a variety of natural language understanding and generation benchmarks. While this model serves as a strong baseline for multiple downstream tasks, it can lack in domain-specific knowledge or proprietary or otherwise sensitive information. Fine-tuning is often used as a means to update a model for a specific task or tasks to better respond to domain-specific prompts. This notebook walks through downloading the Mistral 7B model from Hugging Face, preparing a custom dataset on coding-related tasks and instructions, and using Quantized Low Rank Adaptation (QLoRA) to fine-tune the base model against the dataset. While we focus on a coding-specific task in this example, this methodology can be applied seamlessly to other tasks and data as well.
 
