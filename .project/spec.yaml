@@ -22,7 +22,7 @@ layout:
 environment:
   base:
     registry: nvcr.io
-    image: vjrv0zpbsw9c/pytorch-basic:1.0.13
+    image: nvidia/pytorch:23.12-py3
     build_timestamp: "20231011102429"
     name: PyTorch Basic
     supported_architectures:
@@ -107,8 +107,8 @@ environment:
       - torchvision
       - pytorch-cuda=11.7.0
     package_manager_environment:
-      name: conda
-      target: /opt/conda
+      name: ""
+      target: ""
 execution:
   apps: []
   resources:
