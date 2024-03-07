@@ -125,3 +125,7 @@ execution:
     target: /data/tensorboard/logs/
     description: Tensorboard Log Files
     options: volumeName=tensorboard-logs-volume
+  - type: host
+    target: /project/models/
+    description: Where to save the fine-tuned model on the HOST system
+    options: ""
