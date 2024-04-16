@@ -1,5 +1,5 @@
 # NVIDIA AI Workbench: Introduction
-This is an [NVIDIA AI Workbench](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/) example Project that demonstrates how to fine-tune a Mistral 7B large language model on a custom code instructions dataset using the QLoRA PEFT method. Users in the [AI Workbench Beta Program](https://developer.nvidia.com/ai-workbench-beta) can get up and running with this Project in minutes. Please note the project requirements: 
+This is an [NVIDIA AI Workbench](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/) example Project that demonstrates how to fine-tune a Mistral 7B large language model on a custom code instructions dataset using the QLoRA PEFT method. Users who have [installed AI Workbench](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/) can get up and running with this project in minutes. Please note the project requirements: 
 
 * Operating System: Ubuntu 22.04, Windows (WSL2), MacOS 12+
 * CPU requirements: None, (tested with Intel&reg; Xeon&reg; Platinum 8380 CPU @ 2.30GHz)
@@ -25,7 +25,7 @@ Have questions? Please direct any issues, fixes, suggestions, and discussion on 
 If you have NVIDIA AI Workbench already installed, you can open this Project in AI Workbench on your choice of machine by:
 
 ### On Desktop
-If you do not NVIDIA AI Workbench installed, first follow the installation instructions for AI Workbench [here](https://developer.nvidia.com/ai-workbench-beta/). Then, 
+If you do not NVIDIA AI Workbench installed, first follow the installation instructions for AI Workbench [here](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/). Then, 
 
 1. Fork this Project to your own GitHub namespace and copy the link
 
@@ -96,7 +96,7 @@ Get started in the CLI by:
 ---
 
 ## Tested On
-This notebook has been tested with an NVIDIA A100-80gb GPU and the following version of NVIDIA AI Workbench: ```nvwb 0.21.3 (internal; linux; amd64; go1.21.3; Tue Mar  5 03:55:43 UTC 2024)```
+This notebook has been tested with an NVIDIA RTX A6000 GPU and the following version of NVIDIA AI Workbench: ```nvwb 0.21.3 (internal; linux; amd64; go1.21.3; Tue Mar  5 03:55:43 UTC 2024)```
 
 # License
 This NVIDIA AI Workbench example project is under the [Apache 2.0 License](https://github.com/NVIDIA/workbench-example-mistral-finetune/blob/main/LICENSE.txt)
