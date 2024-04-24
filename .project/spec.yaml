@@ -115,7 +115,9 @@ execution:
     gpu:
       requested: 1
     sharedMemoryMB: 1024
-  secrets: []
+  secrets:
+  - variable: HUGGING_FACE_HUB_TOKEN
+    description: Hugging Face API Key
   mounts:
   - type: project
     target: /project/

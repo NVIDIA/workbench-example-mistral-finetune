@@ -22,7 +22,13 @@ Mistral 7B is a recent open-source language model developed by MistralAI that co
 Have questions? Please direct any issues, fixes, suggestions, and discussion on this project to the DevZone Members Only Forum thread [here](https://forums.developer.nvidia.com/t/support-workbench-example-project-mistral-finetune/278376/1). 
 
 # Quickstart
-If you have NVIDIA AI Workbench already installed, you can open this Project in AI Workbench on your choice of machine by:
+
+### Prerequisites
+As of April 2024, this model is gated by Hugging Face. Please complete the following to ensure access to the model. 
+
+1. Create/Login to your a Hugging Face Account and generate an Access Token [here](https://huggingface.co/settings/tokens).
+
+2. Navigate to the base model card [here](https://huggingface.co/mistralai/Mistral-7B-v0.1) and select "Agree and access repository".
 
 ### On Desktop
 If you do not NVIDIA AI Workbench installed, first follow the installation instructions for AI Workbench [here](https://www.nvidia.com/en-us/deep-learning-ai/solutions/data-science/workbench/). Then, 
@@ -41,7 +47,9 @@ If you do not NVIDIA AI Workbench installed, first follow the installation instr
 
 5. When the build completes, set the following configurations.
 
-   * `Environment` &rarr; `Mounts` &rarr; `Configure`. Specify the file path of the mount, eg. where the fine-tuned Mistral model will live on your **host** machine.
+   * `Environment` > `Secrets` > `Configure`. Specify the Hugging Face Hub Access Token you created and configured in the Prerequisites section.
+
+   * `Environment` > `Mounts` > `Configure`. Specify the file path of the mount, eg. where the fine-tuned Mistral model will live on your **host** machine.
    
       eg. if you would like your model directory to reside on your home path, enter ```/home/[user]```
 
@@ -86,6 +94,8 @@ Get started in the CLI by:
    $ nvwb start jupyterlab
    ```
 
+   * You may need to specify your Hugging Face Hub Access Token you created and configured in the Prerequisites section as a project secret.
+   
    * You may need to specify the file path of the mount, eg. where the fine-tuned Mistral model will live on your **host** machine, eg. if you would like your model directory to reside on the home path of the host system, enter ```/home/[user]```
 
 6. Navigate to the `code` directory of the project. Then, open your Mistral fine-tuning notebook of choice and get started. Happy coding!
