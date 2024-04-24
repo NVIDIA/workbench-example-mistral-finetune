@@ -26,7 +26,7 @@ Have questions? Please direct any issues, fixes, suggestions, and discussion on 
 ### Prerequisites
 As of April 2024, this model is gated by Hugging Face. Please complete the following to ensure access to the model. 
 
-1. Create/Login to your a Hugging Face Account and generate an Access Token [here](https://huggingface.co/settings/tokens).
+1. Create/Login to your Hugging Face Account and generate an Access Token [here](https://huggingface.co/settings/tokens).
 
 2. Navigate to the base model card [here](https://huggingface.co/mistralai/Mistral-7B-v0.1) and select "Agree and access repository". You should then see a "You have been granted access to this model" message appear on the model card. 
 
