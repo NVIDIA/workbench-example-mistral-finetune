@@ -1,5 +1,5 @@
 # python packages to install, one per line
-transformers==4.35.0
+transformers==4.38.0
 peft==0.5.0
 bitsandbytes==0.42.0
 accelerate==0.22.0
