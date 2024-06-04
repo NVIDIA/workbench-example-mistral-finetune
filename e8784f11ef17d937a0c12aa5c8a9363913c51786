@@ -1,0 +1,1 @@
+{"schema":"v1","records":[{"type":"ENVIRONMENT","operation":"CREATED","data":[{"data":"Added packages through pip package manager: jupyterlab\u003e3.0","mime":"text/plain"}],"important":null},{"type":"ENVIRONMENT","operation":"DELETED","data":[{"data":"Removed packages through pip package manager: jupyterlab","mime":"text/plain"}],"important":null}]}
