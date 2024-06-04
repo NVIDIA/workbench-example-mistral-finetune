@@ -1,4 +1,5 @@
 specVersion: v2
+specMinorVersion: 1
 meta:
   name: mistral-finetune
   image: project-mistral-finetune
@@ -38,20 +39,22 @@ environment:
     - name: jupyterlab
       type: jupyterlab
       class: webapp
-      start_command: jupyter notebook --allow-root --port 8888 --ip 0.0.0.0 --no-browser
+      start_command: jupyter lab --allow-root --port 8888 --ip 0.0.0.0 --no-browser
         --NotebookApp.base_url=\$PROXY_PREFIX --NotebookApp.default_url=/lab
-      health_check_command: '[ \$(echo url=\$(jupyter notebook list | head -n 2 |
+      health_check_command: '[ \$(echo url=\$(jupyter lab list | head -n 2 |
         tail -n 1 | cut -f1 -d'' '' | grep -v ''Currently'' | sed "s@/?@/lab?@g")
         | curl -o /dev/null -s -w ''%{http_code}'' --config -) == ''200'' ]'
-      stop_command: jupyter notebook stop 8888
+      stop_command: jupyter lab stop 8888
       user_msg: ""
+      logfile_path: ""
+      timeout_seconds: 0
       icon_url: ""
       webapp_options:
         autolaunch: true
         port: "8888"
         proxy:
           trim_prefix: false
-        url_command: jupyter notebook list | head -n 2 | tail -n 1 | cut -f1 -d' '
+        url_command: jupyter lab list | head -n 2 | tail -n 1 | cut -f1 -d' '
           | grep -v 'Currently'
     - name: tensorboard
       type: tensorboard
@@ -60,8 +63,10 @@ environment:
         --bind_all
       health_check_command: '[ \$(curl -o /dev/null -s -w ''%{http_code}'' http://localhost:\$TENSORBOARD_PORT\$PROXY_PREFIX/)
         == ''200'' ]'
-      stop_command: ""
+      stop_command: pkill tensorboard
       user_msg: ""
+      logfile_path: ""
+      timeout_seconds: 0
       icon_url: ""
       webapp_options:
         autolaunch: true
